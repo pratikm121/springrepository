@@ -17,6 +17,13 @@ public class Contacts {
 	private BigDecimal home;
 	private BigDecimal office;
 	
+	
+	
+	public Contacts() {
+		super();
+	}
+
+
 	public Contacts(BigDecimal id, String name, String email, String homeAddress, String officeAddress,
 			Timestamp createTimestamp, BigDecimal mobile, BigDecimal mobile_2, BigDecimal home, BigDecimal office) {
 		super();
