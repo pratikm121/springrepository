@@ -12,4 +12,10 @@ public class TestController {
 		System.out.println("Got the home call");
 		return "home";
 	}
+	
+	@GetMapping("/leaders")
+	public String leaders() {
+		System.out.println("Got the leadercall");
+		return "leaders";
+	}
 }

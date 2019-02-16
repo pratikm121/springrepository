@@ -9,6 +9,7 @@ public class LoginController {
 	@GetMapping("/login")
 	public String login() {
 		System.out.println("Got the login call");
-		return "loginPage";
+		//return "loginPage";
+		return "bootstrapLogin";
 	}
 }
