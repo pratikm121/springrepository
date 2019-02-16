@@ -72,7 +72,11 @@
 					 <groupId>org.apache.maven.plugins</groupId>
     				 <artifactId>maven-war-plugin</artifactId>
     				 <version>3.2.2</version>
-				</plugin>
+    				  <configuration>
+			            <warName>SpringSecurity</warName>
+			           <!-- <outputDirectory>C:\Work\Tomcat9\webapps</outputDirectory>-->
+			         </configuration> 
+				</plugin>			
 			</plugins>
 		</pluginManagement>
 	</build>
