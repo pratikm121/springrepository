@@ -10,11 +10,18 @@
 				Roles :- <security:authentication property="principal.authorities"/>
 			</p>
 		</div>
-		<div style="margin-bottom: 25px" class="input-group">
-			<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
-			<a href="${pageContext.request.contextPath}/leaders">LeaderShip Meeting</a>
-		</div>
-		
+		<security:authorize access="hasRole('MANAGER')">
+			<div style="margin-bottom: 25px" class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+				<a href="${pageContext.request.contextPath}/leaders">LeaderShip Meeting</a>
+			</div>
+		</security:authorize>
+		<security:authorize access="hasRole('ADMIN')">
+			<div style="margin-bottom: 25px" class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span> 
+				<a href="${pageContext.request.contextPath}/systems">SysOps Admins Meeting</a>
+			</div>
+		</security:authorize>
 		<form:form action="${pageContext.request.contextPath}/logout" 
 				   method="POST">
 				   <button type="submit" class="btn btn-success">Logout</button>

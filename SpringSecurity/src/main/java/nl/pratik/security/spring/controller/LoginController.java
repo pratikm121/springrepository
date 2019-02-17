@@ -9,7 +9,12 @@ public class LoginController {
 	@GetMapping("/login")
 	public String login() {
 		System.out.println("Got the login call");
-		//return "loginPage";
 		return "bootstrapLogin";
+	}
+	
+	@GetMapping("/accessDenied")
+	public String accessDenied() {
+		System.out.println("Got the accessDenied call");
+		return "accessDenied";
 	}
 }
