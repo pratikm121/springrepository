@@ -1,7 +1,7 @@
 <%@ include file="init.jsp" %>
 <html>
 	<body>
-		<h1>Welcome</h1>
+		<h1>Welcome to Spring Rest API Project</h1>
 		<a href="${pageContext.request.contextPath}/rest/test">Test Rest API call :- /rest/test</a><br>
 		<a href="${pageContext.request.contextPath}/api/students">GET List of students :- /api/students</a><br>	
 		<a href="${pageContext.request.contextPath}/api/students/2">GET Student by ID=2 :- /api/students/2</a><br>
