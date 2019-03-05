@@ -43,3 +43,18 @@ This project has following features :-
 3. Deploy the generated war file named  SpringSecurity.war (under /target folder) onto your choice of server.
 
 ****************END OF STEPS TO DEPLOY AND RUN THE APPLICATION ******************************
+
+#SpringRestApplication
+This is a simple maven build project used to create Spring REST API application with full CRUD operations . 
+This project has following features :-
+
+1. Create REST API end points to connect with database using PUT/POST/GET/DELETE methods .
+2. Use exception handling to take of any custom/generic exceptions.
+3. Using Postgres and hibernate to connect with db.
+
+****************STEPS TO DEPLOY AND RUN THE APPLICATION ******************************
+1. Run the sql statements from DB_scripts.txt for creating tables (customer) and data required for storing customer details.
+2. Import the project into workspace and build the war file using "mvn clean install" command.
+3. Deploy the generated war file named  SpringSecurity.war (under /target folder) onto your choice of server.
+
+****************END OF STEPS TO DEPLOY AND RUN THE APPLICATION ******************************
