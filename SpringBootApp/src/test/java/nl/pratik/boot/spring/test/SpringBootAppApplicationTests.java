@@ -1,4 +1,4 @@
-package nl.pratik.boot.spring.SpringBootApp;
+package nl.pratik.boot.spring.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
